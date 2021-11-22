@@ -1,0 +1,18 @@
+.dropdown .btn-primary
+{   
+    background-color: white !important;
+    color: #7a7a7a !important;
+    border-color: white !important;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    height: 40px;
+    box-shadow: none !important;
+    /* line-height: 40px; */
+    border: transparent;
+    letter-spacing: 1px;
+}
+.dropdown .btn-primary:hover{
+    color: #fba70b !important;
+}

@@ -1,0 +1,24 @@
+.dueAssign{
+    display: flex;
+    flex-direction: column; 
+    /* background-color: purple; */
+    /* justify-content: center;*/
+    
+    height:60vh;
+    
+}
+.dueAssign_tasks{
+    flex:1;
+    /* background-image:url("https://t3.ftcdn.net/jpg/03/51/51/28/360_F_351512882_2kFH8IaSe4lyA7SXBLzEXyGKNEgbO1iH.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    padding:30px; */
+    overflow: scroll;
+}
+.dueAssign_tasks > li {
+    list-style: upper-roman !important;
+    margin-top: 20px;
+}
+.dueAssign_heading{
+    
+}

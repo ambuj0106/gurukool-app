@@ -1,0 +1,26 @@
+.main{
+    margin: auto;
+    background-image: url("https://cdn.pixabay.com/photo/2018/07/05/16/59/frame-3518725_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 100%;
+}
+.main_sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+.react-calendar{
+    margin: auto;    
+}
+
+.main_calendar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: aqua; */
+    margin: auto;
+    /* width: 90vw; */
+    height:100vh;
+}
