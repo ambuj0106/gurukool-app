@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "gurukool",
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
