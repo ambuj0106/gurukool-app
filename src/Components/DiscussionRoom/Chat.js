@@ -2,11 +2,6 @@ import React, { useState, useEffect, useReducer, useRef } from 'react'
 import './Chat.css'
 import { IconButton, Avatar } from '@mui/material'
 import SearchIcon from '@mui/icons-material/Search';
-import AttachFileIcon from '@mui/icons-material/AttachFile';
-import MoodIcon from '@mui/icons-material/Mood';
-import MicIcon from '@mui/icons-material/Mic';
-
-import MoreVert from '@mui/icons-material/MoreVert';
 import { useParams } from 'react-router';
 import { db } from '../../firebase';
 import { useAuth } from '../../contexts/AuthContext';
@@ -14,9 +9,11 @@ import firebase from 'firebase';
 import Filter from 'bad-words';
 import AddParticipants from './AddParticipants';
 
+import RemoveParticipants from './RemoveParticipants';
+
 const Chat = ({ }) => {
     const [input, setInput] = useState("");
-    const [seed, setSeed] = useState("");
+    const [seed, setSeed] = useState(1);
     const [roomName, setRoomName] = useState("");
     const [roomMessages, setRoomMessages] = useState([]);
     const { roomId } = useParams();
@@ -30,7 +27,6 @@ const Chat = ({ }) => {
             db.collection('rooms').doc(roomId).onSnapshot(snapshot => {
                 setRoomName(snapshot.data().name);
             });
-            // console.log(db.collection('rooms').doc(roomId).collection('messages'), "hello")
             db.collection("rooms")
                 .doc(roomId)
                 .collection('messages')
@@ -50,11 +46,6 @@ const Chat = ({ }) => {
     useEffect(() => {
         scrollToBottom()
     }, [roomMessages])
-
-    // Generating a random number to set user image.
-    useEffect(() => {
-        setSeed(Math.floor(Math.random() * 5000));
-    }, []);
 
     // Function for sending a message in DB and updating the chat.
     const sendMessage = (e) => {
@@ -79,13 +70,10 @@ const Chat = ({ }) => {
                 </div>
                 <div className="chat_headerRight">
                     <IconButton>
-                        <SearchIcon />
-                    </IconButton>
-                    <IconButton>
-                        <AttachFileIcon />
-                    </IconButton>
-                    <IconButton>
                         <AddParticipants roomId={roomId} />
+                    </IconButton>
+                    <IconButton>
+                        <RemoveParticipants roomId={roomId} />
                     </IconButton>
                 </div>
             </div>

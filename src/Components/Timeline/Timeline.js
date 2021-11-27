@@ -1,24 +1,29 @@
 import React, { useEffect, useState } from 'react'
-import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Timeline.css'
-import { Navbar } from '../Navbar';
 import CustomCalendar from './CustomCalendar';
 import DueAssign from './DueAssign';
 import { db } from '../../firebase';
 import { useAuth } from '../../contexts/AuthContext';
-import { fontFamily } from '@mui/system';
+import { useNavigate } from 'react-router';
+import { RedirectLogin } from '../RedirectLogin';
+
 const Timeline = () => {
+    const history = useNavigate();
+
     const [clickedDate, setDate] = useState(new Date());
     const changeDate = (pdate) => {
         setDate(pdate)
     }
+
     const { currentUser } = useAuth();
-    const [isAdded, setisAdded] = useState(0);
     const [allAssignment, setAllAssignment] = useState([]);
     const [assignDueDate, setAssignDueDate] = useState([]);
 
+    const returnHome = () => {
+        history("/")
+    }
     useEffect(() => {
         let localAssign = [], localDates = [];
 
@@ -36,22 +41,26 @@ const Timeline = () => {
                 })
             })
     }, [currentUser])
-    useEffect(() => {
-        console.log(assignDueDate)
-    }, [assignDueDate])
+
     return (
-        <div className="main ">
-            <div className="main_body container">
-                <div className="row">
-                    <div className="col-md-12 col-lg-3 main_calendar">
-                        <CustomCalendar setDate={changeDate} assignDueDate={assignDueDate} />
+        (currentUser) ? (
+            <div className="main">
+                <div className="main_body container">
+                    <div onClick={returnHome} className="row main_heading">
+                        GURUKOOL
                     </div>
-                    <div className="col-md-12 col-lg-8 main_sidebar ">
-                        <DueAssign clickedDate={clickedDate} allAssignment={allAssignment} />
+                    <div className="row">
+                        <div className="col-md-12 col-lg-3 main_calendar">
+                            <CustomCalendar setDate={changeDate} assignDueDate={assignDueDate} />
+                        </div>
+                        <div className="col-md-12 col-lg-8 main_sidebar ">
+                            <DueAssign clickedDate={clickedDate} allAssignment={allAssignment} />
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div>) : (
+            <RedirectLogin />
+        )
     )
 }
 

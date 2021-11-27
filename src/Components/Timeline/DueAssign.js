@@ -27,7 +27,7 @@ const DueAssign = ({ clickedDate, allAssignment }) => {
     }
     return (
         < div className="dueAssign" >
-            <h1 className="dueAssign_heading">Assignments due on {clickedDate.toLocaleDateString()} till {clickedDate.toLocaleTimeString()}</h1>
+            <h2 className="dueAssign_heading">Assignments Due On: {clickedDate.toLocaleDateString()}</h2>
             <ul className="dueAssign_tasks">
                 {
                     (currentUser) &&
@@ -36,7 +36,7 @@ const DueAssign = ({ clickedDate, allAssignment }) => {
                             <>
                                 {
                                     (isSameDay(obj.dueDate, clickedDate)) && (
-                                        < li >
+                                        <li>
                                             {
                                                 setHasAssign()
 
@@ -52,10 +52,13 @@ const DueAssign = ({ clickedDate, allAssignment }) => {
                 }
                 {
                     (hasAssign == 0) && (
-                        <h3>No assignment</h3>
+                        <div className="No_assignment">
+                            <h1>No assignment</h1>
+                        </div>
                     )
                 }
             </ul>
+
         </div >
     )
 }

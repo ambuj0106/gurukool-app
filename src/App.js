@@ -13,6 +13,8 @@ import Signup from './Components/Signup';
 import ChatRoom from './Components/ChatRoom';
 import Timeline from './Components/Timeline/Timeline';
 import AssignAssignment from './Components/AssignAssignment';
+import ForgotPassword from './Components/ForgotPassword';
+import { Footer } from './Components/Footer';
 
 
 function App() {
@@ -22,20 +24,17 @@ function App() {
       <BrowserRouter>
         <AuthProvider>
           <Routes>
-            <Route path="/" element={<><Navbar /> <Banner /><Features /></>} />
+            <Route path="/" element={<><Navbar /> <Banner /><Features /><Footer /></>} />
             <Route path="/LogIn" element={<LogIn />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/rooms" element={<ChatRoom />} />
             <Route path="/rooms/:roomId" element={<ChatRoom />} />
             <Route path="/timeline" element={<Timeline />} />
             <Route path="/assignAssignment" element={<AssignAssignment />} />
-
+            <Route path="/forgotPassword" element={<ForgotPassword />} />
           </Routes>
-
         </AuthProvider>
-
       </BrowserRouter>
-
     </div >
   );
 }

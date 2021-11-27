@@ -13,10 +13,6 @@ export const Banner = () => {
                                 data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
                                 <h1>Simple App that we <em>CREATE</em></h1>
                                 <p>
-                                    {/* <!-- <a href="#">HTML landing page</a> template is provided by <a
-                                        href="#">TemplateMo</a>.
-                                    You can modify and use it for your commercial websites for free of charge. This template is
-                                    last updated on 29 Oct 2019.</p> --> */}
                                     Gurukool is built to make teaching and learning easier for everyone, from the littlest
                                     learners to college faculty to business leaders.
                                     Our only moto is to make learning fun and easy for everyone.

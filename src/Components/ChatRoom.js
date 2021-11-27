@@ -1,15 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Navigate, useNavigate, useParams } from 'react-router'
 import Chat from "./DiscussionRoom/Chat"
 import Sidebar from './DiscussionRoom/Sidebar'
 import { useAuth } from '../contexts/AuthContext'
 import "./ChatRoom.css"
+import { RedirectLogin } from './RedirectLogin'
+
 
 
 function ChatRoom() {
     const { currentUser } = useAuth();
     const { roomId } = useParams();
     const history = useNavigate();
+
     return (
         <>
             {
@@ -22,7 +25,11 @@ function ChatRoom() {
                                 <Chat />
                             }
                         </div>
-                    </div>) : <Navigate to="/login" />
+                    </div>) : (
+
+                        <RedirectLogin />
+
+                    )
             }
         </>
     );

@@ -5,18 +5,18 @@ const Assignment = ({ Assign }) => {
 
     return (
         <div>
-            <Card style={{ width: '40vw' }}>
-                {
-                    // <Card.Img variant="top" src="holder.js/100px180" />
-                    console.log(Assign)
-                }
+            <Card className="text-center" style={{ "width": '90%' }}>
+                <Card.Header>{Assign.Name}</Card.Header>
                 <Card.Body>
-                    <Card.Title>{Assign.Name}</Card.Title>
+
                     <Card.Text>
                         {Assign.description}
+
+
                     </Card.Text>
-                    <Button variant="primary"> {Assign.link} </Button>
+
                 </Card.Body>
+                <Card.Footer><a href={Assign.link}> Click here </a></Card.Footer>
             </Card>
         </div>
     )

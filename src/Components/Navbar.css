@@ -1,6 +1,5 @@
 .dropdown .btn-primary
 {   
-    background-color: white !important;
     color: #7a7a7a !important;
     border-color: white !important;
     font-weight: 500;
@@ -12,7 +11,29 @@
     /* line-height: 40px; */
     border: transparent;
     letter-spacing: 1px;
+    padding: 0px !important;
+
+}
+.ddcolor {
+    background-color: #F7F7F7 !important;
+}
+.ddcolor .btn-primary{
+    background-color: #F7F7F7 !important;
 }
 .dropdown .btn-primary:hover{
     color: #fba70b !important;
+    
+}
+
+.dropdown a {
+    color:#7a7a7a !important;
+}
+.dropdown_dropdown .dropdown-item a{
+    margin-left: 10px;
+}
+.dropdown a:hover {
+    color:#fba70b !important;
+}
+.block{
+    display:block !important;
 }

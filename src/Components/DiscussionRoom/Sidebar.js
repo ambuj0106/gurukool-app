@@ -33,33 +33,27 @@ const Sidebar = () => {
                 <IconButton>
                     <Link to="/"><HomeIcon /></Link>
                 </IconButton>
-                <div className="sidebar_headerRight">
-                    <IconButton>
-                        <DonutLargeIcon />
-                    </IconButton>
-                    <IconButton>
-                        <ChatIcon />
-                    </IconButton>
-                    <IconButton>
-                        <MoreVertIcon />
-                    </IconButton>
+                {
+                    // <div className="sidebar_headerRight">
+                    //     <IconButton>
+                    //         <DonutLargeIcon />
+                    //     </IconButton>
+                    //     <IconButton>
+                    //         <ChatIcon />
+                    //     </IconButton>
+                    //     <IconButton>
+                    //         <MoreVertIcon />
+                    //     </IconButton>
 
-                </div>
-            </div>
-            <div className="sidebar_search">
-                <div className="sidebar_searchContainer">
-                    <SearchIcon />
-                    <input placeholder="Search" type="text" />
-                </div>
-
+                    // </div>
+                }
             </div>
             <div className="sidebar_chats">
 
                 <SidebarChat addNewChat />
                 {currentUser &&
                     rooms.map(room => (
-                        room.data.userEmails.includes(currentUser.email) && < SidebarChat key={room.id} id={room.id} name={room.data.name} />
-
+                        (room.data.userEmails.includes(currentUser.email) || currentUser.isTeacher) && < SidebarChat key={room.id} id={room.id} name={room.data.name} />
                     )
                     )
 

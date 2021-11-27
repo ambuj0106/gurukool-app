@@ -8,17 +8,18 @@
     
 }
 .dueAssign_tasks{
-    flex:1;
-    /* background-image:url("https://t3.ftcdn.net/jpg/03/51/51/28/360_F_351512882_2kFH8IaSe4lyA7SXBLzEXyGKNEgbO1iH.jpg");
-    background-repeat: repeat;
-    background-position: center;
-    padding:30px; */
-    overflow: scroll;
-}
-.dueAssign_tasks > li {
-    list-style: upper-roman !important;
     margin-top: 20px;
+    flex:1;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.dueAssign_tasks > li {     
+    margin-top: 20px ;
 }
 .dueAssign_heading{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.No_assignment{
     
 }

@@ -11,13 +11,15 @@ export function AuthProvider({ children }) {
     const [currentUser, setCurrentUser] = useState(null)
     const [loading, setLoading] = useState(true)
 
-    async function signup(email, password, name) {
+    async function signup(email, password, name, classTag) {
 
         return auth.createUserWithEmailAndPassword(email, password).then(cred => {
             return db.collection("users").doc(cred.user.uid).set({
                 name: name,
                 email: email,
-                isTeacher: false
+                isTeacher: false,
+                class: classTag,
+                assignmentsId: []
             });
         });
     }
@@ -36,10 +38,6 @@ export function AuthProvider({ children }) {
         return auth.sendPasswordResetEmail(email)
     }
 
-    function updateEmail(email) {
-        return currentUser.updateEmail(email)
-    }
-
     function updatePassword(password) {
         return currentUser.updatePassword(password)
     }
@@ -49,13 +47,11 @@ export function AuthProvider({ children }) {
 
             if (cred) {
                 const docRef = db.collection("users").doc(cred.uid)
-
                 docRef.get().then((doc) => {
                     if (doc.exists) {
                         setCurrentUser(doc.data());
                     }
                 })
-                // console.log(currentUser.name, "USeRINFo");
             }
             setLoading(false)
         })
@@ -69,7 +65,6 @@ export function AuthProvider({ children }) {
         signup,
         logout,
         resetPassword,
-        updateEmail,
         updatePassword
     }
 

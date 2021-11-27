@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
 .main{
     margin: auto;
     background-image: url("https://cdn.pixabay.com/photo/2018/07/05/16/59/frame-3518725_960_720.jpg");
@@ -6,21 +7,34 @@
     background-position: center;
     height: 100%;
 }
+.main_heading{
+    padding-top: 130px;
+    justify-content: center;
+	
+    color: black;
+	font-family: 'Ultra', serif;
+	font-size: 50px;    
+	text-transform: uppercase;
+}
+.main_heading:hover{
+   color: #fba70b;
+   cursor: pointer;
+}
+
 .main_sidebar{
     display: flex;
     flex-direction: column;
-    justify-content: center;    
+   
 }
+
 .react-calendar{
-    margin: auto;    
+    margin-top:55px;    
 }
 
 .main_calendar{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* background-color: aqua; */
+    flex-direction: column;   
     margin: auto;
-    /* width: 90vw; */
-    height:100vh;
+    height:90vh;
 }
+
