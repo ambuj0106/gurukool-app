@@ -1,47 +1,44 @@
-.sidebarChat{
-    display: flex;
-    padding: 20px;
-    cursor: pointer;
-    border-bottom: 1px solid #f6f6f6;
+.sidebarChat {
+  display: flex;
+  padding: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #f6f6f6;
 }
-.sidebarChat:hover{
-    background-color: #ee7724;
+.sidebarChat:hover {
+  background-color: #ee7724;
 }
-.sidebarChat:active{
-    background-color: #ee7724;
-}
-
-.sidebarChat_info > h2{
-    font-size: 16px;
-    margin-bottom: 8px;
-    color:white;
-}
-.sidebarChat_info{
-    margin-left: 15px;
-}
-.sidebarChat_info > button{
-        width: 29vw;
-        color: #fff !important;
-        text-transform: uppercase;
-        text-decoration: none;
-        background: #F58A52;
-        padding: 20px;
-        border-radius: 50px;
-        display: inline-block;
-        border: none;
-        transition: all 0.4s ease 0s;
-    
+.sidebarChat:active {
+  background-color: #ee7724;
 }
 
-.sidebarChat_info > button:hover{
-    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
-	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-	transition: all 0.4s ease 0s;
-
+.sidebarChat_info > h2 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: white;
 }
-a
-{
-    text-decoration: none;
-    color:black;
+.sidebarChat_info {
+  margin-left: 15px;
+}
+.sidebarChat_info > button {
+  width: 29vw;
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #f58a52;
+  padding: 20px;
+  border-radius: 50px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+}
+
+.sidebarChat_info > button:hover {
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
