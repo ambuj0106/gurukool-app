@@ -156,12 +156,20 @@ You can login as a Student using given credentials and Can make your own student
 
 ## Roadmap
 
-- Class Room
-  <img src="./images/hp2.png"></img>
-- Class Room
-  <img src="./images/hp2.png"></img>
-- [] Feature 3
-  - [] Nested Feature
+- If user Try to Enter without Login 
+  <img src="./images/classroom1.png"></img>
+- Class Room UI
+  <img src="./images/classroom2.png"></img>
+- Class Room ADD Member
+  <img src="./images/classRoomaddmember.png"></img>
+- Class Room Remove Member
+  <img src="./images/classRoomremove.png"></img>
+- TimeLine (No assignment)
+   <img src="./images/TimeLine1.png"></img>
+- TimeLine (With assignment)
+   <img src="./images/TimeLine2.png"></img>
+-  Assign Assignment 
+   <img src="./images/assignassignment.png"></img>
 
 See the [open issues](https://github.com/ambuj0106/gurukool-app/issues) for a full list of proposed features (and known issues).
 
