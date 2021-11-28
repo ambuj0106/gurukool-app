@@ -156,8 +156,10 @@ You can login as a Student using given credentials and Can make your own student
 
 ## Roadmap
 
-- [] Feature 1
-- [] Feature 2
+- Class Room
+  <img src="./images/hp2.png"></img>
+- Class Room
+  <img src="./images/hp2.png"></img>
 - [] Feature 3
   - [] Nested Feature
 
