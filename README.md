@@ -11,7 +11,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/ambuj0106/gurukool-app">
-    <img src="./images/GurukoolLogo.png" alt="Logo" width="80" height="80">
+    <img src="./images/GurukoolLogo.png" alt="Logo" width="200" height="100">
   </a>
 
 <h3 align="center">Gurukool</h3>
