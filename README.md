@@ -155,19 +155,20 @@ You can login as a Student using given credentials and Can make your own student
 <!-- ROADMAP -->
 
 ## Roadmap
-
+- Login Page
+<img src="./images/login.png"></img>
 - If user Try to Enter without Login 
   <img src="./images/classroom1.png"></img>
 - Class Room UI
   <img src="./images/classroom2.png"></img>
 - Class Room ADD Member
-  <img src="./images/classRoomaddmember.png"></img>
+  <img src="./images/classRoom addmember.png"></img>
 - Class Room Remove Member
-  <img src="./images/classRoomremove.png"></img>
+  <img src="./images/classRoom remove.png"></img>
 - TimeLine (No assignment)
    <img src="./images/TimeLine1.png"></img>
 - TimeLine (With assignment)
-   <img src="./images/TimeLine2.png"></img>
+   <img src="./images/Timeline2.png"></img>
 -  Assign Assignment 
    <img src="./images/assignassignment.png"></img>
 
@@ -185,18 +186,7 @@ Project Link: [https://github.com/ambuj0106/gurukool-app](https://github.com/amb
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGMENTS -->
-
-## Acknowledgments
-
-- []()
-- []()
-- []()
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/ambuj0106/gurukool-app.svg?style=for-the-badge
 [contributors-url]: https://github.com/ambuj0106/gurukool-app/graphs/contributors
