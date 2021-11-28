@@ -35,19 +35,6 @@ const Sidebar = () => {
             <HomeIcon />
           </Link>
         </IconButton>
-        {
-          // <div className="sidebar_headerRight">
-          //     <IconButton>
-          //         <DonutLargeIcon />
-          //     </IconButton>
-          //     <IconButton>
-          //         <ChatIcon />
-          //     </IconButton>
-          //     <IconButton>
-          //         <MoreVertIcon />
-          //     </IconButton>
-          // </div>
-        }
       </div>
       <div className="sidebar_chats">
         <SidebarChat addNewChat />

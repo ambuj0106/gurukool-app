@@ -78,11 +78,15 @@ export const Footer = () => {
                   More About <em>Gurukool</em>
                 </h2>
                 <p>
-                  Phasellus dapibus urna vel lacus accumsan, iaculis eleifend
-                  leo auctor.Duis at finibus odio. Vivamus ut pharetra arcu, in
-                  porta metus.Suspendisse blandit pulvinar ligula ut elementum.
-                  If you need this contact form to send email to your inbox, you
-                  may follow our{" "}
+                  All-in-one: place Bring all your learning tools together and
+                  manage multiple classes in one central destination.
+                  <br />
+                  Easy to use: Anyone in your school community can get up and
+                  running with Classroom in minutes.
+                  <br />
+                  Access from anywhere: Empower teaching and learning from
+                  anywhere, on any device, and give your class more flexibility
+                  and mobility.{" "}
                   <a
                     rel="nofollow"
                     href="https://templatemo.com/contact"
@@ -110,7 +114,7 @@ export const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="https://www.instagram.com/ambujverma00/">
                       <i class="fa fa-instagram"></i>
                     </a>
                   </li>
