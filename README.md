@@ -17,15 +17,9 @@
 <h3 align="center">Gurukool</h3>
 
   <p align="center">
-    project_description
+    Gurukool is built to make teaching and learning easier for everyone, from the littlest learners to college faculty to business leaders. Our only moto is to make learning fun and easy for everyone.
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
+    <a href="https://gurukool-407e9.web.app/">Visit Site</a>
     <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
   </p>
 </div>
