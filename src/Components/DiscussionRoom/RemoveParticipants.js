@@ -51,7 +51,7 @@ const RemoveParticipants = ({ roomId }) => {
       .then(() => {
         setRoomUsers(tempEmails);
       });
-  }, [roomId, userRemoved]);
+  });
 
   return (
     <div>
