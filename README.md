@@ -61,14 +61,12 @@
 
 ### Built With
 
-- [Next.js](https://nextjs.org/)
 - [React.js](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Angular](https://angular.io/)
-- [Svelte](https://svelte.dev/)
-- [Laravel](https://laravel.com)
 - [Bootstrap](https://getbootstrap.com)
-- [JQuery](https://jquery.com)
+- [Firebase](https://firebase.google.com/)
+- [Html](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [NodeJs](https://nodejs.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -76,33 +74,57 @@
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Prerequisites
+## Available Scripts
 
-This is an example of how to list things you need to use the software and how to install them.
+In the project directory, you can run:
 
-- npm
-  ```sh
-  npm install npm@latest -g
-  ```
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/ambuj0106/gurukool-app.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = "ENTER YOUR API";
-   ```
+1. `git clone https://github.com/ambuj0106/gurukool.git`
+2. `cd ./gurukool-app`
+3. Install node dependencies
+   - `npm install`
+4. Replace firebase API keys with your configurations
+5. Create a `.env` file
+   - Add relevant credentials
+   - `cp .env.example .env`
+6. `npm start`
+7. The app is now running at http://localhost:3000/
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -110,9 +132,23 @@ This is an example of how to list things you need to use the software and how to
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+You can login as a Teacher(Admin) using given credentials
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+- Teacher1
+  Email: Teacher1@gurukool.com
+  Password: 123456
+- Teacher2
+  Email: Teacher2@gurukool.com
+  Password: 123456
+
+You can login as a Student using given credentials and Can make your own student account using Teacher account
+
+- Student 1
+  Email: Student1@gurukool.com
+  Password: 123456
+- Student 2
+  Email: Student2@gurukool.com
+  Password: 123456
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -126,31 +162,6 @@ _For more examples, please refer to the [Documentation](https://example.com)_
   - [] Nested Feature
 
 See the [open issues](https://github.com/ambuj0106/gurukool-app/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- LICENSE -->
-
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
