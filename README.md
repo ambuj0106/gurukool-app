@@ -20,6 +20,7 @@
     Gurukool is built to make teaching and learning easier for everyone, from the littlest learners to college faculty to business leaders. Our only moto is to make learning fun and easy for everyone.
     <br />
     <a href="https://gurukool-407e9.web.app/">Visit Site</a>
+    .
     <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
   </p>
 </div>
@@ -54,7 +55,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Gurukool][product-screenshot]](https://example.com)
 
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email`, `email_client`, `project_title`, `project_description`
 
@@ -190,4 +191,4 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/hp1.png
